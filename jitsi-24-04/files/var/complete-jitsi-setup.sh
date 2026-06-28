@@ -162,6 +162,8 @@ PY
         ln -sf "/var/lib/prosody/auth.${JITSI_HOSTNAME}.key" "/etc/prosody/certs/auth.${JITSI_HOSTNAME}.key"
         ln -sf "/var/lib/prosody/auth.${JITSI_HOSTNAME}.crt" "/etc/prosody/certs/auth.${JITSI_HOSTNAME}.crt"
         ln -sf "/var/lib/prosody/auth.${JITSI_HOSTNAME}.crt" "/usr/local/share/ca-certificates/auth.${JITSI_HOSTNAME}.crt"
+        ln -sf "/var/lib/prosody/${JITSI_HOSTNAME}.key" "/etc/prosody/certs/${JITSI_HOSTNAME}.key"
+        ln -sf "/var/lib/prosody/${JITSI_HOSTNAME}.crt" "/etc/prosody/certs/${JITSI_HOSTNAME}.crt"
         update-ca-certificates -f
     fi
 }
